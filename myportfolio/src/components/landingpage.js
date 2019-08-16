@@ -24,7 +24,7 @@ class Landing extends Component {
                 <div className='social-links'>
 
                     {/*Linkedin*/}
-                    <a href='http://google.com' rel='noopener noreferrer' target='_blank'>
+                    <a href='https://www.linkedin.com/in/loubeants-celestin-8863b18b/' rel='noopener noreferrer' target='_blank'>
                     <i className="fa fa-linkedin-square"  aria-hidden="true"/>
                     </a>
 
@@ -34,7 +34,7 @@ class Landing extends Component {
                     </a>
 
                     {/*GitHub*/}
-                    <a href='http://google.com' rel='noopener noreferrer' target='_blank'>
+                    <a href='https://github.com/loubeants' rel='noopener noreferrer' target='_blank'>
                     <i className="fa fa-github-square"  aria-hidden="true"/>
                     </a>
 
