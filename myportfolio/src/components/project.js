@@ -8,30 +8,71 @@ class Project extends Component {
         this.state = { activeTab: 0 };
     }
 
-
     toggleCategories() {
 
         if (this.state.activeTab === 0) {
             return (
+
+                <div className='projects-grid'>
+
+                     {/* Project 1 */}
+                
                 <Card shadow={5} styles={{ minWidth: '450', margin: 'auto' }}>
                     <CardTitle style={{
                         color: '#fff', height: '176px', background:
                             'url(https://www.brihaspatitech.com/wp-content/uploads/2017/01/Node-Js-Development.png)'
                     }}>Node Project #1</CardTitle>
-                    <CardText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil cum laboriosam nobis est totam natus dolorem illum placeat? Delectus facilis fugiat nostrum explicabo.
-</CardText>
-
+                    <CardText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil cum laboriosam nobis est totam natus dolorem illum placeat? Delectus facilis fugiat nostrum explicabo.</CardText>
                     <CardActions border>
                         <Button colored>GitHub</Button>
                         <Button colored>CodePen</Button>
                         <Button colored>LiveDemo</Button>
                     </CardActions>
-                    <CardMenu style={{color:'#fff'}}>
-                        <IconButton name='share'/>
+                    <CardMenu style={{ color: '#fff' }}>
+                        <IconButton name='share' />
                     </CardMenu>
                 </Card>
-            )
-        } else if (this.state.activeTab === 1) {
+                    
+                    {/* Project 2 */}
+
+                <Card shadow={5} styles={{ minWidth: '450', margin: 'auto' }}>
+                    <CardTitle style={{
+                        color: '#fff', height: '176px', background:
+                            'url(https://www.brihaspatitech.com/wp-content/uploads/2017/01/Node-Js-Development.png)'
+                    }}>Node Project #2</CardTitle>
+                    <CardText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil cum laboriosam nobis est totam natus dolorem illum placeat? Delectus facilis fugiat nostrum explicabo.</CardText>
+                    <CardActions border>
+                        <Button colored>GitHub</Button>
+                        <Button colored>CodePen</Button>
+                        <Button colored>LiveDemo</Button>
+                    </CardActions>
+                    <CardMenu style={{ color: '#fff' }}>
+                        <IconButton name='share' />
+                    </CardMenu>
+                </Card>
+
+                    {/* Project 3 */}
+
+                <Card shadow={5} styles={{ minWidth: '450', margin: 'auto', }}>
+                    <CardTitle style={{
+                        color: '#fff', height: '176px', background:
+                            'url(https://www.brihaspatitech.com/wp-content/uploads/2017/01/Node-Js-Development.png)'
+                    }}>Node Project #3</CardTitle>
+                    <CardText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil cum laboriosam nobis est totam natus dolorem illum placeat? Delectus facilis fugiat nostrum explicabo.</CardText>
+                    <CardActions border>
+                        <Button colored>GitHub</Button>
+                        <Button colored>CodePen</Button>
+                        <Button colored>LiveDemo</Button>
+                    </CardActions>
+                    <CardMenu style={{ color: '#fff' }}>
+                        <IconButton name='share' />
+                    </CardMenu>
+                </Card>
+            </div>
+            )  
+        } 
+        
+        else if (this.state.activeTab === 1) {
             return (
                 <div><h1>This is React</h1></div>
             )
@@ -61,12 +102,11 @@ class Project extends Component {
                     <Tab>JAVA</Tab>
                 </Tabs>
 
-                <section className="project-grid">
-                    <Grid className="project-grid"></Grid>
-                    <Cell col={12}>
-                        <div className="content">{this.toggleCategories()}</div>
-                    </Cell>
-                </section>
+                   <Grid>
+                        <Cell col={12}>
+                            <div className="content">{this.toggleCategories()}</div>
+                        </Cell>                       
+                    </Grid> 
             </div>
         )
     }
