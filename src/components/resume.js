@@ -20,9 +20,9 @@ class Resume extends Component {
 
                         <h2 style={{ paddingTop: '2em' }}>Loubeants Celestin</h2>
                         <h4 style={{ color: 'grey' }}>Programmer</h4>
-                        <hr styles={{ borderTop: '3px solid #833fb2', width: '50%' }} />
+                        <hr styles={{ borderTop: '3px solid #0099F7', width: '50%' }} />
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ipsa reiciendis. Fugiat, dignissimos alias quos ducimus unde temporibus libero cupiditate magnam expedita veritatis facilis animi exercitationem, quam fugit commodi reiciendis?</p>
-                        <hr styles={{ borderTop: '3px solid #833fb2', width: '50%' }} />
+                        <hr styles={{ borderTop: '3px solid #0099F7' }} />
                         <h5>Address</h5>
                         <p>4822 Spring Lake dr. Apt. Charlotte, NC 28212</p>
                         <h5>Phone</h5>
@@ -71,11 +71,6 @@ class Resume extends Component {
                         <hr style={{ borderTop: '3px solid #e22947' }} />
                         <h2>Skills</h2>
                         <Skills/>
-
-
-
-
-
 
                     </Cell>
                 </Grid>
