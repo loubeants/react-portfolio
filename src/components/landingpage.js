@@ -2,12 +2,14 @@ import React, {Component } from 'react';
 import {Grid, Cell} from 'react-mdl';
 
 
+
 class Landing extends Component {
     render() {
         return(
             <div style={{Width: '100%', margin: 'auto'}}>
             <Grid className='landing-grid'>
                 <Cell col={12}>
+                
                 <img src='https://previews.123rf.com/images/jemastock/jemastock1708/jemastock170807747/83958935-dark-skin-man-with-afro-avatar-icon-image-vector-illustration-design.jpg'
                 alt='avatar'
                 className='avatar-img'
